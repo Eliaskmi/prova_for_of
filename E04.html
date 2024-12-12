@@ -1,0 +1,22 @@
+<script>
+    //Problema: Apresentar os divisores de um número
+    /*
+    Peça para o usuário informar um número N e apresente, ao final do programa, todos os divisores de N que, ao realizar a divisão, o resto é igual a zero.
+    Por exemplo: Se o usuário informar o número 12, o programa deve apresentar os números 1, 2, 3, 4, 6 e 12.
+    */
+
+    const numeroN = Number(prompt(`informe um numero N`));
+    let divisores = [];
+    //AQUI, USE FOR COM VARIÁVEL DE CONTROLE!!!
+    for (let contador = 1; contador <= numeroN; contador++){
+         const divisao = numeroN / contador;
+         if (divisao % 1 == 0){
+            divisores.push(contador)
+         }
+      }
+      
+      document.write(`Os divisores de ${numeroN} são ${divisores}`)
+    
+
+
+</script>
